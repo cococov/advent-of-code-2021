@@ -1,4 +1,4 @@
-const input: number[] = Deno.readTextFileSync('./input_1').split('\n').map(n => parseInt(n));
+const input: number[] = Deno.readTextFileSync('./input').split('\n').map(n => parseInt(n));
 
 const result1: number = input.reduce((acc, curr, index, arr) => (index !== 0 && arr[index - 1] < curr) ? ++acc : acc, 0);
 
