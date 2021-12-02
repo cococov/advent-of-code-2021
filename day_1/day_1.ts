@@ -4,10 +4,10 @@ const result1: number = input.reduce((acc, curr, index, arr) => (index !== 0 && 
 
 console.log(`Answer 1: ${result1}`);
 
-const result2: number = input.reduce((acc, _curr, index, arr) => {
+const result2: number = input.reduce((acc, curr, index, arr) => {
   return (index < 3)
     ? acc
-    : arr[index - 3] < arr[index]
+    : arr[index - 3] < curr
       ? ++acc
       : acc;
 }, 0);
