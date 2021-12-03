@@ -13,3 +13,5 @@ const result2: number = input.reduce((acc, curr, index, arr) => {
 }, 0);
 
 console.log(`Answer 2: ${result2}`);
+
+export {};
