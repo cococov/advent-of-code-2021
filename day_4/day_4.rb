@@ -1,6 +1,6 @@
-input = File.open('input', 'r').read.split("\n\n")
+input = File.open('input', 'r').read.split(/\n\n/)
 numbers = input.shift.split(/,/).map(&:to_i)
-boards = input.map { |board| board.split(/\n/).map{ |row| row.strip.split(/\s+/).map(&:to_i) } }
+boards = input.map { |board| board.split(/\n/).map { |row| row.strip.split(/\s+/).map(&:to_i) } }
 
 def set_mark state, number
   state.map do |board|
@@ -42,7 +42,7 @@ def bingo_subsystem_for_loose numbers, boards
   numbers.each_with_index do |number, index|
     mut_state = set_mark(mut_state, number)
     winner_board = someone_win?(mut_state)
-    while winner_board do
+    while winner_board
       return { winner_board: winner_board, winner_number: number } if mut_state.size == 1
       mut_state.delete(winner_board) if winner_board
       winner_board = someone_win?(mut_state)
