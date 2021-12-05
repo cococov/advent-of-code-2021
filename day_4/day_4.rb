@@ -60,5 +60,5 @@ def result_2 numbers, boards
   get_board_score(result[:winner_board], result[:winner_number])
 end
 
-puts "Answer 2: #{result_1(numbers, boards)}"
+puts "Answer 1: #{result_1(numbers, boards)}"
 puts "Answer 2: #{result_2(numbers, boards)}"
