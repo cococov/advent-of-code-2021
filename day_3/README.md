@@ -1,6 +1,6 @@
-# Day 1: Dive!
+# Day 3: Binary Diagnostic 🔧
 
-Link: https://adventofcode.com/2021/day/2
+Link: https://adventofcode.com/2021/day/3
 
 ## Part One
 
