@@ -23,8 +23,8 @@ class Fish
   end
 end
 
-# nice but inefficient solution
-def fishes_after_n_days initial_state, days
+# nice but inefficient solution [try at your own risk xD]
+def fishes_after_n_days_exponential initial_state, days
   fishes = initial_state.map { |timer| Fish.new(timer.to_i) }
   days.times do
     fishes.each(&:new_day)
@@ -35,7 +35,7 @@ def fishes_after_n_days initial_state, days
 end
 
 # ugly but efficient solution
-def fishes_after_n_days_with_good_performance initial_state, days
+def fishes_after_n_days_lineal initial_state, days
   fishes = initial_state.map(&:to_i)
   totals = fishes.reduce(Array.new(9) { 0 }) { |totals, timer| totals[timer] += 1; totals }
   days.times do
@@ -47,11 +47,11 @@ def fishes_after_n_days_with_good_performance initial_state, days
 end
 
 def result_1 initial_state
-  fishes_after_n_days_with_good_performance(initial_state, 80)
+  fishes_after_n_days_lineal(initial_state, 80)
 end
 
 def result_2 initial_state
-  fishes_after_n_days_with_good_performance(initial_state, 256)
+  fishes_after_n_days_lineal(initial_state, 256)
 end
 
 puts "Answer 1: #{result_1(input)}"
