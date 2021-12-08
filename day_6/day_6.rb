@@ -11,8 +11,8 @@ class Fish
 
   def new_day
     @gave_birth = false
-    @timer = @timer - 1
-    if @timer == -1
+    @timer -= 1
+    if @timer.negative?
       @timer = 6
       @gave_birth = true
     end
@@ -28,8 +28,8 @@ def fishes_after_n_days_exponential initial_state, days
   fishes = initial_state.map { |timer| Fish.new(timer.to_i) }
   days.times do
     fishes.each(&:new_day)
-    new_fishes = fishes.select { |fish| fish.gave_birth? }.count
-    new_fishes.times { fishes << Fish.new(8) }
+    born_fishes = fishes.select(&:gave_birth?).count
+    born_fishes.times { fishes << Fish.new(8) }
   end
   fishes.count
 end
