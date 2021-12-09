@@ -1,4 +1,4 @@
-# Day 5: The Treachery of Whales 🐳
+# Day 7: The Treachery of Whales 🐳
 
 Link: https://adventofcode.com/2021/day/7
 

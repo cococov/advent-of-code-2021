@@ -1,4 +1,4 @@
-# Day 5: Lanternfish 🐟
+# Day 6: Lanternfish 🐟
 
 Link: https://adventofcode.com/2021/day/6
 
