@@ -68,7 +68,7 @@ At this point, the third board **wins** because it has at least one complete row
 
 The score of the winning board can now be calculated. Start by finding the **sum of all unmarked numbers** on that board; in this case, the sum is 188. Then, multiply that sum by **the number that was just called** when the board won, `24`, to get the final score, `188 * 24 = 4512`.
 
-To guarantee victory against the giant squid, figure out which board will win first. What will your final score be if you choose that board?
+To guarantee victory against the giant squid, figure out which board will win first. **What will your final score be if you choose that board?**
 
 ## Part Two
 
@@ -78,7 +78,7 @@ You aren't sure how many bingo boards a giant squid could play at once, so rathe
 
 In the above example, the second board is the last to win, which happens after 13 is eventually called and its middle column is completely marked. If you were to keep playing until this point, the second board would have a sum of unmarked numbers equal to `148` for a final score of `148 * 13 = 1924`.
 
-Figure out which board will win last. Once it wins, what would its final score be?
+Figure out which board will win last. Once it wins, **what would its final score be?**
 
 ## Solution
 

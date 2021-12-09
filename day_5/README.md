@@ -47,7 +47,7 @@ In this diagram, the top left corner is `0,0` and the bottom right corner is `9,
 
 To avoid the most dangerous areas, you need to determine **the number of points where at least two lines overlap**. In the above example, this is anywhere in the diagram with a `2` or larger - a total of `5` points.
 
-Consider only horizontal and vertical lines. At how many points do at least two lines overlap?
+Consider only horizontal and vertical lines. At **how many points do at least two lines overlap?**
 
 ## Part Two
 
@@ -75,7 +75,7 @@ Considering all lines from the above example would now produce the following dia
 
 You still need to determine **the number of points where at least two lines overlap**. In the above example, this is still anywhere in the diagram with a `2` or larger - now a total of `12` points.
 
-Consider all of the lines. At how many points do at least two lines overlap?
+Consider all of the lines. **At how many points do at least two lines overlap?**
 
 ## Solution
 
